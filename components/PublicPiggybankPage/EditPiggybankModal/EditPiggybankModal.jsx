@@ -53,7 +53,7 @@ const EditPiggybankModal = (props) => {
     };
     useEffect(() => {
         register("accentColor");
-        setValue("accentColor", data.accentColor); // does this do anything?
+        setValue("accentColor", data?.accentColor); // does this do anything?
     }, [register]);
     const selectedColor = getValues("accentColor");
     return (
