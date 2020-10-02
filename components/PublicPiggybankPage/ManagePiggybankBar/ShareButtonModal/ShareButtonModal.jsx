@@ -1,11 +1,10 @@
-import { useState, useRef, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { useRouter } from 'next/router';
 import {
     Button,
     Flex,
     Box,
-    Image,
     useDisclosure,
     Modal,
     ModalOverlay,
@@ -17,7 +16,6 @@ import {
     Heading,
     Input,
     Icon,
-    Link,
     useClipboard,
 } from '@chakra-ui/core';
 import CopyLinkShareButton from '../../../Buttons/CopyLinkShareButton';
@@ -36,6 +34,8 @@ const shuffleCustomTextOptions = shuffle([
     'holla for a dolla',
     'drop it like it\'s hot',
     'tip jar',
+    'donations',
+    'tips accepted here!',
 ]);
 
 const ShareButtonModal = ({ buttonColor }) => {
